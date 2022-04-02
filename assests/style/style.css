@@ -12,8 +12,8 @@
 .navbar{
     position: fixed;
     width: 100%;
-    background: black;
-    padding: 15px 0;
+    /*background: #ffb432;*/
+    padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -35,6 +35,9 @@
     font-weight: 600;
 }
 
+.navbar .logo > a > span{
+    color: #ffb432;
+}
 .navbar .menu > li{
     list-style: none;
     display: inline-block;
@@ -45,11 +48,17 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu > li > a:hover{
+    color: #ffb432;
 }
 
 /*home section styling*/
 
 .home{
+    background-color: #363940;
     display: flex;
     height: 100vh;
     color: black;
@@ -77,6 +86,6 @@
 }
 
 .home .home-content .text-3 > span{
-    color: yellow;
+    color: #ffb432;
     font-weight: 500;
 }
