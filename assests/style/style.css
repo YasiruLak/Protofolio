@@ -15,6 +15,12 @@
     /*background: #ffb432;*/
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar .sticky{
+    background: #ffb432;
+    padding: 15px 0;
 }
 
 .navbar .max-width{
@@ -37,6 +43,11 @@
 
 .navbar .logo > a > span{
     color: #ffb432;
+    transition: all 0.3s ease;
+}
+
+.navbar .sticky .logo > a > span{
+    color: white;
 }
 .navbar .menu > li{
     list-style: none;
@@ -55,6 +66,18 @@
     color: #ffb432;
 }
 
+.navbar .sticky .menu > li > a:hover{
+    color: white;
+}
+
+/*menu button styling*/
+
+.menu-btn{
+   color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
 /*home section styling*/
 
 .home{
@@ -89,3 +112,43 @@
     color: #ffb432;
     font-weight: 500;
 }
+
+/*responsive media query*/
+
+@media (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        cursor: pointer;
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn > i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #363940;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu .active{
+        left: 0;
+    }
+    .navbar .menu > li{
+        display: block;
+
+    }
+    .navbar .menu > li > a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
+
