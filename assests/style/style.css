@@ -37,7 +37,7 @@
 }
 
 .navbar .logo a{
-    color: white;
+    color: #F0FFF3;
     font-size: 35px;
     font-weight: 600;
 }
@@ -48,7 +48,7 @@
 }
 
 .navbar.sticky .logo a span{
-    color: white;
+    color: #F0FFF3;
 }
 .navbar .menu li{
     list-style: none;
@@ -56,7 +56,7 @@
 }
 
 .navbar .menu li a{
-    color: white;
+    color: #F0FFF3;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -68,13 +68,13 @@
 }
 
 .navbar.sticky .menu li a:hover{
-    color: white;
+    color: #F0FFF3;
 }
 
 /*menu button styling*/
 
 .menu-btn{
-   color: white;
+   color: #F0FFF3;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -118,7 +118,7 @@
     font-size: 25px;
     display: inline-block;
     background: #ffb432;
-    color: black;
+    color: #F0FFF3;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
@@ -131,16 +131,13 @@
     background: none;
 }
 
-/*about section styling*/
+/*all similer styling*/
 
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Poppins', sans-serif;
-}
 
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -150,7 +147,7 @@ section{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -161,19 +158,32 @@ section{
     transform: translateX(-50%);
 }
 
-.about .title::after{
-    content: "who i am";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
     font-size: 20px;
     color: #ffb432;
     padding: 5px;
-    background: white;
+    background: #F0FFF3;
     transform: translateX(-50%);
 }
 
-.about .about-content{
+
+/*about section styling*/
+
+.about{
+    color: #F0FFF3;
+    background: #52575D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title::after{
+    background: #52575D;
+    content: "who i am";
+}
+
+.about .about-content, .services .serv-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -213,7 +223,7 @@ section{
     font-size: 20px;
     display: inline-block;
     background: #ffb432;
-    color: black;
+    color: #F0FFF3;
     padding: 10px 30px;
     margin-top: 20px;
     font-weight: 500;
@@ -223,10 +233,182 @@ section{
 }
 
 .about .about-content .right a:hover{
-     color: #ffb432;
+    color: #ffb432;
     background: none;
 }
 
+
+/*service section styling*/
+
+.services{
+    color: #F0FFF3;
+    background: #363940;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services .title::before{
+    background: #F0FFF3;
+}
+
+.services .title::after{
+    background: #363940;
+    content: "what i provide";
+}
+
+.services .serv-content .card{
+    width: calc(25% - 25px);
+    background: #52575D;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover{
+    background: #ffb432;
+}
+
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+    padding: 10px 10px;
+}
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.services .serv-content{
+    grid-gap: 25px;
+}
+
+.services .serv-content .card i{
+    font-size: 50px;
+    color: #ffb432;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i{
+    color: #F0FFF3;
+}
+
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    padding-bottom: 10px;
+}
+
+/*skills section styling*/
+
+.skills{
+    background: #52575D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .title::after{
+    background: #52575D;
+    content: "what i know";
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p{
+    text-align: justify;
+}
+
+.skills .skills-content .left a{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffb432;
+    color: #F0FFF3;
+    padding: 8px 16px;
+    margin-top: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 2px solid #ffb432;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover{
+    color: #ffb432;
+    background: none;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: #ffb432;
+}
+
+.skills .skills-content .right .html:before{
+    width: 90%;
+}
+
+.skills .skills-content .right .css:before{
+    width: 70%;
+}
+
+.skills .skills-content .right .js:before{
+    width: 85%;
+}
+
+.skills .skills-content .right .java:before{
+    width: 95%;
+}
+
+.skills .skills-content .right .spring:before{
+    width: 60%;
+}
+
+.skills .skills-content .right .hibernate:before{
+    width: 75%;
+}
+
+.skills .skills-content .right .sql:before{
+    width: 80%;
+}
 
 
 
@@ -241,12 +423,6 @@ section{
     .about .about-content .left img{
         height: 350px;
         width: 350px;
-    }
-}
-
-@media (max-width: 991px){
-    .max-width{
-        padding: 0 50px;
     }
 }
 
@@ -310,6 +486,22 @@ section{
     .about .about-content .right{
         flex: 100%;
     }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media all and (min-width: 690px) and (max-width: 990px){
+    .services .serv-content .card{
+        width: calc(48% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 690px){
@@ -325,6 +517,9 @@ section{
     .home .home-content a{
         font-size: 20px;
         /*padding: 0px 25px;*/
+    }
+    .services .serv-content .card{
+        width: 100%;
     }
 }
 
