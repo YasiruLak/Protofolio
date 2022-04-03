@@ -144,6 +144,7 @@ section .title{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
+    color: #F0FFF3;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -178,6 +179,9 @@ section .title::after{
     font-family: 'Poppins', sans-serif;
 }
 
+.about .title::before{
+    background: #F0FFF3;
+}
 .about .title::after{
     background: #52575D;
     content: "who i am";
@@ -312,6 +316,9 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
+.skills .title::before{
+    background: #F0FFF3;
+}
 
 .skills .title::after{
     background: #52575D;
@@ -408,6 +415,122 @@ section .title::after{
 
 .skills .skills-content .right .sql:before{
     width: 80%;
+}
+
+
+/*projects section styling*/
+
+.projects{
+    color: #F0FFF3;
+    background: #52575D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.projects .title::before{
+    background: #F0FFF3;
+}
+
+.projects .title::after{
+    background: #52575D;
+    content: "who with me";
+}
+
+.projects .carousel .card{
+    background: #363940;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover{
+    background: #ffb432;
+    cursor: pointer;
+}
+
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.projects .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffb432;
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover img{
+    border-color: #F0FFF3;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #ffb432!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active{
+     width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active, .owl-dot:hover{
+    background: #ffb432!important;
+}
+
+
+/*contact section styling*/
+
+.contact{
+    color: #F0FFF3;
+    background: #52575D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .title::before{
+    background: #F0FFF3;
+}
+
+.contact .title::after{
+    background: #52575D;
+    content: "get in touch";
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-content .column{
+
 }
 
 
