@@ -151,7 +151,23 @@ html{
     font-weight: 500;
 }
 
-.home .home-content a{
+.home .max-width .social{
+    display: flex;
+    flex-direction: row;
+}
+
+.home .max-width .social .icon{
+    display: inline-block;
+    background: #363940;
+    color: #ffb432;
+    padding: 8px 16px;
+    margin-top: 10px;
+    font-size: 50px;
+    transition: all 0.3s ease;
+}
+
+
+.home .home-content .hire{
     font-size: 25px;
     display: inline-block;
     background: #ffb432;
@@ -545,6 +561,116 @@ section .title::after{
 }
 
 
+/*gallery section stylin*/
+
+.gallery{
+    color: #F0FFF3;
+    background: #52575D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gallery .title::before{
+    background: #F0FFF3;
+}
+
+.gallery .title::before{
+    background: #F0FFF3;
+}
+
+.gallery .title::after{
+    background: #52575D;
+    content: "Enjoy my clicks";
+}
+
+/*.gallery .gallery-content{*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+.gallery .max-width .wrapper{
+    /*background: #ffb432;*/
+    margin: 100px auto;
+    max-width: 1100px;
+}
+
+.gallery .max-width .wrapper nav{
+    display: flex;
+    justify-content: center;
+}
+.gallery .max-width .wrapper nav .items{
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.gallery .max-width .wrapper nav .items .item{
+    padding: 7px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F0FFF3;
+    border: 2px solid #ffb432;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.gallery .max-width .wrapper nav .items .active,
+.gallery .max-width .wrapper nav .items .item:hover{
+    color: #F0FFF3;
+    background: #ffb432;
+}
+
+.gallery-1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.gallery-1 .image1{
+    padding: 8px;
+    width: calc(100% /4);
+}
+
+.gallery-1 .image1.hide{
+    display: none;
+}
+
+.gallery-1 .image1.show{
+    animation: animate 0.4s ease;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+.gallery-1 .image1 span{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-1 .image1 img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.gallery-1 .image1:hover img{
+    transform: scale(1.1);
+}
+
+
+
+
+
 /*contact section styling*/
 
 .contact{
@@ -682,11 +808,13 @@ footer{
     padding: 20px 23px;
     font-family: 'Poppins', sans-serif;
     color: #F0FFF3;
+    align-items: center;
 }
 
 footer span a{
     color: #ffb432;
     text-decoration: none;
+    align-items: center;
 }
 
 footer span a:hover{
@@ -789,6 +917,10 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+
+    .gallery-1 .image1{
+        width: calc(100% /3);
+    }
 }
 
 @media all and (min-width: 690px) and (max-width: 990px){
@@ -815,6 +947,24 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+    .gallery-1 .image1{
+        width: calc(100% /2);
+    }
+    .gallery .max-width .wrapper nav .items{
+        max-width: 600px;
+    }
+    .gallery .max-width .wrapper nav .items .item{
+        padding: 7px 15px;
+    }
+}
+@media (max-width: 620px){
+    .gallery .max-width .wrapper nav .items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gallery .max-width .wrapper nav .items .item{
+        margin: 5px;
+    }
 }
 
 @media (max-width: 500px){
@@ -823,6 +973,16 @@ footer span a:hover{
     }
     .home .home-content .text-3{
         font-size: 27px;
+    }
+    .gallery-1 .image1{
+        width: calc(100% /1);
+    }
+    .gallery .max-width .wrapper nav .items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gallery .max-width .wrapper nav .items .item{
+        margin: 5px;
     }
 }
 
