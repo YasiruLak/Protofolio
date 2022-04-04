@@ -60,6 +60,7 @@ html{
 }
 
 .navbar .menu li a{
+    display: block;
     color: #F0FFF3;
     font-size: 18px;
     font-weight: 500;
