@@ -299,6 +299,27 @@ section .title::after{
     background: none;
 }
 
+.about-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.about-info-title{
+    font-size: 40px;
+    font-weight: 500;
+    color: #F0FFF3;
+}
+
+.about-info-name{
+    font-size: 20px;
+}
+
+.about-info-title,
+.about-info-name{
+    display: block;
+    text-align: center;
+}
 
 /*service section styling*/
 
@@ -417,66 +438,231 @@ section .title::after{
     background: none;
 }
 
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
+/*.skills .skills-content .right .bars{*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*.skills .skills-content .right .info{*/
+/*    display: flex;*/
+/*    margin-bottom: 5px;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.skills .skills-content .right span{*/
+/*    font-weight: 500;*/
+/*    font-size: 18px;*/
+/*    color: #F0FFF3;*/
+/*}*/
+
+/*.skills .skills-content .right .line{*/
+/*    height: 5px;*/
+/*    width: 100%;*/
+/*    background: lightgrey;*/
+/*    position: relative;*/
+/*}*/
+
+/*.skills .skills-content .right .line:before{*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    height: 100%;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    background: #ffb432;*/
+/*}*/
+
+/*.skills .skills-content .right .html:before{*/
+/*    width: 90%;*/
+/*}*/
+
+/*.skills .skills-content .right .css:before{*/
+/*    width: 70%;*/
+/*}*/
+
+/*.skills .skills-content .right .js:before{*/
+/*    width: 85%;*/
+/*}*/
+
+/*.skills .skills-content .right .java:before{*/
+/*    width: 95%;*/
+/*}*/
+
+/*.skills .skills-content .right .spring:before{*/
+/*    width: 60%;*/
+/*}*/
+
+/*.skills .skills-content .right .hibernate:before{*/
+/*    width: 75%;*/
+/*}*/
+
+/*.skills .skills-content .right .sql:before{*/
+/*    width: 80%;*/
+/*}*/
+
+.skills-content2{
+    row-gap: 0;
 }
 
-.skills .skills-content .right .info{
+.skills-header{
     display: flex;
-    margin-bottom: 5px;
     align-items: center;
-    justify-content: space-between;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
-.skills .skills-content .right span{
+.skills-icon,
+.skills-arrow{
+    font-size: 40px;
+    color: #ffb432;
+}
+
+.skills-icon{
+    margin-right: 8px;
+}
+
+.skills-title{
+    margin-top: 18px;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 18px;
     color: #F0FFF3;
 }
 
-.skills .skills-content .right .line{
+.skills-subtitles{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #F0FFF3;
+}
+
+.skills-arrow{
+    margin: auto;
+    transition: 4s;
+}
+
+.skills-list-grid{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills-titles{
+    display: flex;
+    justify-content: space-between;
+    /*margin-top: 10px;*/
+    /*margin-bottom: 10px;*/
+}
+
+.skills-name{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    color: #F0FFF3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.skills-bar,
+.skills-percentage{
     height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
+    border-radius: 25rem;
+    /*margin-bottom: 15px;*/
+}
+.skills-bar{
+    background-color: #52575D;
 }
 
-.skills .skills-content .right .line:before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    right: 0;
-    background: #ffb432;
+.skills-percentage{
+    display: block;
+    background-color: #ffb432;
 }
 
-.skills .skills-content .right .html:before{
+.skills-html{
     width: 90%;
 }
 
-.skills .skills-content .right .css:before{
+.skills-css{
+    width: 80%;
+}
+
+.skills-js{
     width: 70%;
 }
 
-.skills .skills-content .right .js:before{
-    width: 85%;
-}
-
-.skills .skills-content .right .java:before{
-    width: 95%;
-}
-
-.skills .skills-content .right .spring:before{
+.skills-angular{
     width: 60%;
 }
 
-.skills .skills-content .right .hibernate:before{
-    width: 75%;
+.skills-react{
+    width: 65%;
 }
 
-.skills .skills-content .right .sql:before{
+.skills-java{
+    width: 90%;
+}
+
+.skills-node{
     width: 80%;
 }
+
+.skills-firebase{
+    width: 70%;
+}
+
+.skills-hibernate{
+    width: 60%;
+}
+
+.skills-spring{
+    width: 65%;
+}
+
+.skills-xd{
+    width: 90%;
+}
+
+.skills-figma{
+    width: 80%;
+}
+
+.skills-ps{
+    width: 70%;
+}
+
+.skills-sketch{
+    width: 60%;
+}
+
+.skills-illusatrate{
+    width: 65%;
+}
+
+.skills-titles span{
+    color: #F0FFF3;
+    margin-bottom: 0;
+    margin-top: 14px;
+}
+
+.skills-close .skills-list-grid{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills-open .skills-list-grid{
+    height: max-content;
+    margin-bottom: 10px;
+}
+
+.skills-open .skills-arrow{
+    transform: rotate(-180deg);
+}
+
+
+
+
+
+
+
+
+
 
 
 /*projects section styling*/

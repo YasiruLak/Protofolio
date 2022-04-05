@@ -92,24 +92,23 @@ window.onload = () =>{
         }
     }
 
-    // for (let index =0; index < filterImg.length; index++){
-    //     filterImg[index].setAttribute("onclick", "preview(this)");
-    // }
 }
 
-//selecting all required element
 
-// const previewBox = document.querySelector(".preview-box"),
-// previewBox = previewBox.querySelector("img"),
-// closeIcon = previewBox.querySelector(".icon-2");
+const skillsContent = document.getElementsByClassName('skills-content2'),
+    skillsHeader = document.querySelectorAll('.skills-header');
 
-//full screen preview function
+function  toggleSkills(){
+    let itemClass = this.parentNode.className
 
-// function preview(element){
-//     let selectedPrevImg = element.querySelector("img").src;
-//     previewImg.src = selectedPrevImg;
-//     previewBox.classList.add("show");
-//     closeIcon.onclick = ()=>{
-//         previewBox.classList.remove("show");
-//     }
-// }
+    for (let i =  0; i < skillsContent.length; i++){
+        skillsContent[i].className = 'skills-content2 skills-close'
+    }
+    if (itemClass === 'skills-content2 skills-close'){
+        this.parentNode.className = 'skills-content2 skills-open'
+    }
+}
+
+skillsHeader.forEach((el) =>{
+    el.addEventListener('click', toggleSkills)
+})
