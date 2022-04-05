@@ -488,7 +488,7 @@ section .title::after{
 
 .projects .title::after{
     background: #52575D;
-    content: "who with me";
+    content: "what my work";
 }
 
 .projects .carousel .card{
@@ -552,7 +552,7 @@ section .title::after{
 }
 
 .owl-dot.active{
-     width: 35px;
+    width: 35px;
     border-radius: 14px;
 }
 
@@ -678,55 +678,61 @@ section .title::after{
     transform: scale(1.1);
 }
 
-.preview-box{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.9);
-    background: #ffb432;
-    max-width: 350px;
-    width: 100%;
-    z-index: 5;
-    /*opacity: 0;*/
-    /*pointer-events: none;*/
-    padding: 0 5px 5px 5px;
-    border-radius: 3px;
-}
+/*.preview-box{*/
+/*    position: fixed;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%) scale(0.9);*/
+/*    background: #ffb432;*/
+/*    max-width: 350px;*/
+/*    width: 100%;*/
+/*    z-index: 5;*/
+/*    !*opacity: 0;*!*/
+/*    pointer-events: none;*/
+/*    padding: 0 5px 5px 5px;*/
+/*    border-radius: 3px;*/
+/*}*/
 
-.preview-box .details-2{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 13px 13px 10px;
-    align-items: center;
+/*.preview-box .show{*/
+/*    opacity: 1;*/
+/*    pointer-events: auto;*/
+/*    transform: translate(-50%, -50%) scale(1);*/
+/*}*/
 
-}
+/*.preview-box .details-2{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    padding: 0 13px 13px 10px;*/
+/*    align-items: center;*/
 
-.preview-box .details-2 .title{
-    display: flex;
-    font-weight: 400;
-    font-size: 18px;
-}
+/*}*/
 
-.preview-box .details-2 .title p{
-    margin-left: 5px;
-    font-weight: 500;
-}
+/*.preview-box .details-2 .title{*/
+/*    display: flex;*/
+/*    font-weight: 400;*/
+/*    font-size: 18px;*/
+/*}*/
 
-.details-2 .icon-2{
-    color: #363940;
-    font-size: 22px;
-    cursor: pointer;
-}
+/*.preview-box .details-2 .title p{*/
+/*    margin-left: 5px;*/
+/*    font-weight: 500;*/
+/*}*/
 
-.preview-box .image-box{
-    display: flex;
-    width: 100%;
-}
+/*.details-2 .icon-2{*/
+/*    color: #363940;*/
+/*    font-size: 22px;*/
+/*    cursor: pointer;*/
+/*}*/
 
-.image-box img{
-    width: 100%;
-    border-radius: 0 0 3px 3px;
-}
+/*.preview-box .image-box{*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.image-box img{*/
+/*    width: 100%;*/
+/*    border-radius: 0 0 3px 3px;*/
+/*}*/
 
 /*.shadow{*/
 /*    position: fixed;*/

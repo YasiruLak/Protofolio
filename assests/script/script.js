@@ -30,7 +30,7 @@ $(document).ready(function (){
 
     });
 
-    var typed = new Typed(".",{
+    var typed = new Typed(".typing-2",{
         strings: ["Full Stack Developer", "Freelance", "Developer", "Designer", "Blogger", "Traveller"],
         typeSpeed: 100,
         backSpeed: 60,
@@ -91,5 +91,25 @@ window.onload = () =>{
             });
         }
     }
+
+    // for (let index =0; index < filterImg.length; index++){
+    //     filterImg[index].setAttribute("onclick", "preview(this)");
+    // }
 }
 
+//selecting all required element
+
+// const previewBox = document.querySelector(".preview-box"),
+// previewBox = previewBox.querySelector("img"),
+// closeIcon = previewBox.querySelector(".icon-2");
+
+//full screen preview function
+
+// function preview(element){
+//     let selectedPrevImg = element.querySelector("img").src;
+//     previewImg.src = selectedPrevImg;
+//     previewBox.classList.add("show");
+//     closeIcon.onclick = ()=>{
+//         previewBox.classList.remove("show");
+//     }
+// }
