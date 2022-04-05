@@ -153,19 +153,24 @@ html{
 
 .home .max-width .social{
     display: flex;
-    flex-direction: row;
+    grid-template-columns: max-content;
+    column-gap: 2px;
 }
 
-.home .max-width .social .icon{
-    display: inline-block;
+.home .max-width .social .social-icon{
+    /*display: inline-block;*/
     background: #363940;
     color: #ffb432;
     padding: 8px 16px;
     margin-top: 10px;
-    font-size: 50px;
+    font-size: 35px;
     transition: all 0.3s ease;
 }
 
+.home .max-width .social .social-icon:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
 
 .home .home-content .hire{
     font-size: 25px;
