@@ -1,4 +1,10 @@
 $(document).ready(function (){
+    $('.about-info-title').counterUp({
+        delay:3,
+        time:300
+    });
+
+
     $(window).scroll(function (){
         if (this.scrollY > 20){
             $('.navbar').addClass("sticky")
@@ -116,21 +122,22 @@ skillsHeader.forEach((el) =>{
 
 
 
-const tabs = document.querySelectorAll('[data-target]'),
-    tabContents = document.querySelectorAll('[data-content]')
+// const tabs = document.querySelectorAll('[data-target]'),
+//     tabContents = document.querySelectorAll('[data-content]')
+//
+// tabs.forEach(tab =>{
+//     tab.addEventListener('click', () =>{
+//         const target = document.querySelector(tab.dataset.target)
+//
+//         tabContents.forEach(tabContent =>{
+//             tabContent.classList.remove('qualification-active')
+//         });
+//         target.classList.add('qualification-active')
+//
+//         tabs.forEach(tab =>{
+//             tab.classList.remove('qualification-active')
+//         });
+//         tab.classList.add('qualification-active')
+//     })
+// })
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
-        const target = document.querySelector(tab.dataset.target)
-
-        tabContents.forEach(tabContent =>{
-            tabContent.classList.remove('qualification-active')
-        });
-        target.classList.add('qualification-active')
-
-        tabs.forEach(tab =>{
-            tab.classList.remove('qualification-active')
-        });
-        tab.classList.add('qualification-active')
-    })
-})

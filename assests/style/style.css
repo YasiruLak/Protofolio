@@ -261,6 +261,24 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
+    animation: animateimg 2s;
+}
+
+@keyframes animateimg{
+    0% {
+        opacity: 0;
+        transform: scale(0);
+
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1);
+
+    }
+    100% {
+        opacity: 1;
+
+    }
 }
 
 .about .about-content .right{
@@ -312,7 +330,7 @@ section .title::after{
 }
 
 .about-info-name{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .about-info-title,
@@ -345,8 +363,25 @@ section .title::after{
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
+    /*box-sizing: border-box;*/
+    /*height: 100%;*/
+    /*overflow: hidden;*/
     transition: all 0.3s ease;
+    /*transform: translate(1px, -30px);*/
+    /*animation: rotatecard 3s ease-in-out alternate ;*/
 }
+
+/*@keyframes rotatecard{*/
+
+/*    0% {*/
+/*        transform: rotate(360deg);*/
+/*        right: 25px;*/
+/*    }*/
+/*    100% {*/
+/*        transform: rotate(-360deg);*/
+/*        left: 25px;*/
+/*    }*/
+/*}*/
 
 .services .serv-content .card:hover{
     background: #ffb432;
@@ -448,15 +483,15 @@ section .title::after{
 
 .qualification-rounder{
     display: inline-block;
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
     background-color: #ffb432;
     border-radius: 50%;
 }
 
 .qualification-line{
     display: block;
-    width: 1px;
+    width: 2px;
     height: 100%;
     background-color: #ffb432;
     transform: translate(6px, -7px);
@@ -912,7 +947,7 @@ section .title::after{
     border: 2px solid #ffb432;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
 }
 .gallery .max-width .wrapper nav .items .active,
 .gallery .max-width .wrapper nav .items .item:hover{
@@ -936,8 +971,9 @@ section .title::after{
 }
 
 .gallery-1 .image1.show{
-    animation: animate 0.4s ease;
+    animation: animate 0.4s ease-out;
 }
+
 
 @keyframes animate{
     0%{
@@ -968,7 +1004,7 @@ section .title::after{
 .gallery-1 .image1 img{
     width: 100%;
     vertical-align: middle;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
 }
 
 .gallery-1 .image1:hover img{
