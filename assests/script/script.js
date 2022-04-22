@@ -1,9 +1,9 @@
-$(document).ready(function (){
-    $('.about-info-title').counterUp({
-        delay:3,
-        time:300
-    });
+$(window).on('load', function (){
+    // $(".loader-icon").css('display','none');
+    $(".loader-icon").fadeOut(1000);
+});
 
+$(document).ready(function (){
 
     $(window).scroll(function (){
         if (this.scrollY > 20){
@@ -29,7 +29,7 @@ $(document).ready(function (){
     // typing animation script
 
     var typed = new Typed(".typing",{
-        strings: ["Full Stack Developer", "Freelance", "Developer", "Designer", "Blogger", "Traveller"],
+        strings: ["Freelance", "Developer", "Designer", "Blogger", "Traveller"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -37,7 +37,7 @@ $(document).ready(function (){
     });
 
     var typed = new Typed(".typing-2",{
-        strings: ["Full Stack Developer", "Freelance", "Developer", "Designer", "Blogger", "Traveller"],
+        strings: ["Freelance", "Developer", "Designer", "Blogger", "Traveller"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -120,24 +120,26 @@ skillsHeader.forEach((el) =>{
 })
 
 
+//scroll reveal animation
+
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2800,
+})
+
+sr.reveal(`.social-icon, .text-1, .text-2, .text-3, .hire, .qualification-data, .serv-content, .item, .image1, .footer-bottom,
+ .row, .address, .fields, .footer-col, .logo, .footer-social, .footerP`,{
+    origin: 'top',
+    interval: 100,
+})
 
 
-// const tabs = document.querySelectorAll('[data-target]'),
-//     tabContents = document.querySelectorAll('[data-content]')
-//
-// tabs.forEach(tab =>{
-//     tab.addEventListener('click', () =>{
-//         const target = document.querySelector(tab.dataset.target)
-//
-//         tabContents.forEach(tabContent =>{
-//             tabContent.classList.remove('qualification-active')
-//         });
-//         target.classList.add('qualification-active')
-//
-//         tabs.forEach(tab =>{
-//             tab.classList.remove('qualification-active')
-//         });
-//         tab.classList.add('qualification-active')
-//     })
-// })
+sr.reveal(`.right`,{
+    origin: 'right',
+    interval: 100,
+})
 
+sr.reveal(`.left`,{
+    origin: 'left',
+    interval: 100,
+})

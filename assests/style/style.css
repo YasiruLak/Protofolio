@@ -75,6 +75,26 @@ html{
     color: #F0FFF3;
 }
 
+
+.loader-icon{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #F1F2F3;
+    z-index: 99999;
+}
+
+.loader-icon img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+}
 /*menu button styling*/
 
 .menu-btn{
@@ -727,6 +747,9 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
+.projects .carousel .card p{
+    color: #F0FFF3;
+}
 .projects .carousel .card:hover{
     background: #ffb432;
     cursor: pointer;
@@ -745,6 +768,7 @@ section .title::after{
 }
 
 .projects .carousel .card .text{
+    color: #F0FFF3;
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -895,6 +919,7 @@ section .title::after{
 
 .gallery-1 .image1:hover img{
     transform: scale(1.1);
+    /*background: linear-gradient( to top, rgb(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0) 100% );*/
 }
 
 /*contact section styling*/
@@ -1281,6 +1306,7 @@ ul{
     }
     .gallery .max-width .wrapper nav .items .item{
         padding: 7px 15px;
+        font-size: 16px;
     }
     .qualification-title{
         font-size: 20px;
@@ -1307,6 +1333,7 @@ ul{
     }
     .gallery .max-width .wrapper nav .items .item{
         margin: 5px;
+        font-size: 14px;
     }
     .skills-title{
         font-size: 22px;
@@ -1380,6 +1407,22 @@ ul{
 
     .footer-bottom{
         font-size: 10px;
+    }
+
+    .skills-title{
+        margin-top: 18px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .skills-subtitles{
+        font-size: 14px;
+    }
+
+    .skills-icon,
+    .skills-arrow{
+        font-size: 34px;
+        color: #ffb432;
     }
 }
 
